@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="实时语音助手、主动交互与数字生命档案的公开体验入口。" />
+    <title>AI 交互体验集</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="返回页面顶部">
+        <span class="brand-mark" aria-hidden="true">AI</span>
+        <span>交互体验集</span>
+      </a>
+      <nav aria-label="页面导航">
+        <a href="#projects">三个项目</a>
+        <a href="#boundaries">使用边界</a>
+        <a href="#install">安装说明</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">PUBLIC PREVIEW · 2026.10</p>
+          <h1>让别人直接体验，<br />不只看一段演示。</h1>
+          <p class="hero-lead">三个关于实时语音、主动协助与个人记忆的实验产品，集中在一个公开入口。可以在线体验的直接打开，需要本机能力的提供清晰下载状态。</p>
+          <div class="hero-actions">
+            <a class="button primary" href="/archive/archive.html?experience=first">体验数字生命档案</a>
+            <a class="button secondary" href="#projects">查看全部项目</a>
+          </div>
+        </div>
+        <aside class="release-board" aria-label="当前发布状态">
+          <p>当前发布状态</p>
+          <div><span class="status-dot live"></span><strong>1</strong><small>在线体验</small></div>
+          <div><span class="status-dot beta"></span><strong>1</strong><small>Beta 下载</small></div>
+          <div><span class="status-dot hold"></span><strong>1</strong><small>候选待确认</small></div>
+          <p class="board-note">所有入口都保留真实的验证边界，不把自动化测试写成真实用户验收。</p>
+        </aside>
+      </section>
+
+      <section class="projects" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow">THREE EXPERIMENTS</p>
+          <h2>三种不同的交互入口</h2>
+          <p>一个负责及时回应，一个负责在合适时机出现，一个负责把长期经历留给自己。</p>
+        </div>
+
+        <article class="project-card voice">
+          <div class="project-index">01</div>
+          <div class="project-main">
+            <div class="project-status"><span class="status-dot beta"></span>可下载 · 开发者 Beta</div>
+            <h3>实时语音助手</h3>
+            <p>连续语音、自然打断、唤醒与静默切换，配合按需视觉和每次都要确认的本机文件工具。</p>
+            <ul>
+              <li>Apple Silicon · macOS 13+</li>
+              <li>需自备 Azure GPT-Live 资源与 API 密钥</li>
+              <li>密钥存入系统钥匙串，不随下载包分发</li>
+            </ul>
+          </div>
+          <div class="project-action">
+            <a class="button primary" href="https://github.com/jappre/ai-interaction-experiments/releases/download/v0.1.0/viaim-realtime-assistant-macos-arm64-beta.zip">下载 macOS Beta</a>
+            <small>未做 Developer ID 公证；下载前请先阅读下方安装与安全说明。</small>
+            <code id="voice-sha">SHA-256 af8b613e6e0051ccd4f1fcb79b85fcb1850735bb6b8af51accfc9932f822ffac</code>
+          </div>
+        </article>
+
+        <article class="project-card proactive">
+          <div class="project-index">02</div>
+          <div class="project-main">
+            <div class="project-status"><span class="status-dot hold"></span>发布候选 · 下载暂未开放</div>
+            <h3>主动交互</h3>
+            <p>在当前可见的飞书私聊中识别尚未回应的问题或请求，准备一张建议卡；不自动回复，也不替使用者发送。</p>
+            <ul>
+              <li>Apple Silicon · macOS 14.2+</li>
+              <li>需要屏幕录制与辅助功能权限</li>
+              <li>不保存聊天正文；本地规则可独立工作</li>
+            </ul>
+          </div>
+          <div class="project-action">
+            <span class="button disabled" aria-disabled="true">等待发布确认</span>
+            <small>候选包已经生成，但在项目发布限制解除和验证复核完成前不公开下载。</small>
+          </div>
+        </article>
+
+        <article class="project-card archive">
+          <div class="project-index">03</div>
+          <div class="project-main">
+            <div class="project-status"><span class="status-dot live"></span>在线体验 · 已公开</div>
+            <h3>数字生命档案</h3>
+            <p>从照片或文字开始，把经历、原件、自己的理解和修订记录留在一起；内容由本人确认，不替你自动下结论。</p>
+            <ul>
+              <li>无需注册，桌面与手机浏览器均可打开</li>
+              <li>资料只存当前浏览器，不会自动上传</li>
+              <li>公开版不包含云端 AI 对话</li>
+            </ul>
+          </div>
+          <div class="project-action">
+            <a class="button primary" href="/archive/archive.html?experience=first">立即体验</a>
+            <small>浏览器存储尚未加密，清除网站数据会丢失记录，请只使用测试资料。</small>
+          </div>
+        </article>
+      </section>
+
+      <section class="boundaries" id="boundaries">
+        <div class="section-heading inverse">
+          <p class="eyebrow">WHAT IS VERIFIED</p>
+          <h2>公开，不等于夸大完成度。</h2>
+          <p>下面这些边界会和产品一起保留，让体验者知道什么已经验证，什么仍需要真实设备或正式发行流程。</p>
+        </div>
+        <div class="boundary-grid">
+          <div><span>语音助手</span><strong>自动化回归已覆盖核心链路</strong><p>但不等于真人麦克风、回声、USB 热插拔或长时间真实通话验收。</p></div>
+          <div><span>主动交互</span><strong>合成飞书窗口与策略测试覆盖较完整</strong><p>但当前仍有一项跨进程通知持久化验证未通过，且发布状态尚未解除。</p></div>
+          <div><span>数字档案</span><strong>可在线完成导入、保存、修订与找回</strong><p>但它是未加密的浏览器体验版，不是安全备份、真实账户或完整数字遗产服务。</p></div>
+        </div>
+      </section>
+
+      <section class="install" id="install">
+        <div class="section-heading">
+          <p class="eyebrow">BEFORE YOU INSTALL</p>
+          <h2>先确认来源，再打开测试包。</h2>
+        </div>
+        <ol>
+          <li><span>01</span><div><strong>下载后先核对 SHA-256</strong><p>终端运行 <code>shasum -a 256 下载的文件.zip</code>，结果应与页面显示完全一致。</p></div></li>
+          <li><span>02</span><div><strong>把它当作开发者测试版</strong><p>当前包没有 Developer ID 公证。若系统阻止打开，不要关闭全局安全机制；确认来源无误后，可在 Finder 中右键应用并选择“打开”。</p></div></li>
+          <li><span>03</span><div><strong>只给完成体验所需的权限</strong><p>语音助手按需授权麦克风或摄像头；主动交互只在正式开放后按说明授权飞书窗口读取权限。</p></div></li>
+          <li><span>04</span><div><strong>先用非敏感资料</strong><p>测试阶段不要导入密钥、密码、身份证件、客户资料或其他无法承受泄露的内容。</p></div></li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <p>AI 交互体验集 · 公开预览</p>
+      <p>更新于 2026-10-10 · 能力说明以本页发布边界为准</p>
+    </footer>
+  </body>
+</html>
